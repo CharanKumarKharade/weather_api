@@ -14,11 +14,12 @@ function App() {
         if (finalResult.cod == "404") {
           setWeather("");
         } else {
+           setIsLoading(false);
           setWeather(finalResult);
         }
       })
     );
-    setIsLoading(false);
+   
     setCity("");
   };
 
